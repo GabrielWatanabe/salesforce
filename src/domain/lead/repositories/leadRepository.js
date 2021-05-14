@@ -1,6 +1,7 @@
 const unirest = require('unirest');
 require('dotenv').config()
 const account = require('../models/lead');
+const AccountRepository = require('../../account/repositories/accountRepository')
 const ConectAuthSalesForce = require('../../../infra/oauth/conectAuthSalesForce')
 
 const { SF_LOGIN_URL } = process.env;
